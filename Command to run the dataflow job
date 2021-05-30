@@ -1,0 +1,8 @@
+python etl_pipeline.py \
+--project=$PROJECT \
+--region=northamerica-northeast1 \
+--runner=DataflowRunner \
+--staging_location=gs://dataflow-bharadwaj-test/test \
+--temp_location gs://dataflow-bharadwaj-test/test \
+--input gs://dataflow-bharadwaj-test/*.csv \
+--save_main_session
